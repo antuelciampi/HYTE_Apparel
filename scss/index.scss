@@ -1,0 +1,211 @@
+@import "_colores.scss";
+
+//////////////////
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+
+body {
+    height: 300vh;
+}
+
+// REDES-UPBUTTON //
+
+.clickers {
+    z-index: 1;
+    padding: 5px;
+    display: flex;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    flex-direction: column;
+
+    img {
+        width: 30px;
+        height: 30px;
+        color: black;
+    }
+}
+
+// HEADER //
+
+.shipping {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: rgb(24, 23, 23);
+    font-weight: 600;
+
+    #shipping-p {
+        font-size: 1.2rem;
+        text-decoration: underline 1px solid;
+        padding-right: 3.5rem;
+    }
+}
+
+.header {
+    border-top: 1px solid rgba(255, 255, 255, 0.589);
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .head-categories {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            font-weight: 600;
+
+            a {
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                transition: border-bottom-color 0.3s ease-in-out;
+                padding-bottom: 5px;
+
+                &:hover {
+                    border-bottom-color: white;
+                }
+            }
+        }
+    }
+
+    .head-logo {
+        margin-left: 50px;
+        //
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .head-icons {
+        display: flex;
+        gap: 10px;
+
+        a {
+            text-decoration: none;
+        }
+
+        i {
+            margin: 0px 20px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// MAIN BODY //
+
+/* Slideshow container */
+
+.slider_sect {
+    display: flex;
+    flex-direction: column;
+    height: 83.5vh;
+    .slideshow-container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        margin: auto;
+
+        .mySlides {
+            img {
+                z-index: 0;
+                width: 100%;
+                height: 60%;
+                opacity: 0.7;
+            }
+
+            .text {
+                -webkit-user-select: none;
+                user-select: none;
+                color: black;
+                font-size: 50px;
+                padding: 8px 12px;
+                position: absolute;
+                text-align: center;
+                top: 36vh;
+                left: 29vw;
+            }
+            
+            .text_blue {
+                -webkit-user-select: none;
+                user-select: none;
+                color: black;
+                font-size: 50px;
+                padding: 8px 12px;
+                position: absolute;
+                text-align: center;
+                top: 42vh;
+                left: 42vw;
+                text-shadow: 2px 3px $azul_hyte;
+            }
+
+            .text_red {
+                -webkit-user-select: none;
+                user-select: none;
+                color: black;
+                font-size: 50px;
+                padding: 8px 12px;
+                position: absolute;
+                text-align: center;
+                top: 42vh;
+                left: 42vw;
+                text-shadow: 2px 3px $rojo_hyte;
+        }
+    }
+
+    .prevBtn i,
+    .nextBtn i {
+        background: none;
+        position: absolute;
+        border: none;
+        top: 45%;
+        margin-top: -22px;
+        padding: 7px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 40px;
+        transition: 0.6s ease;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .nextBtn i {
+        right: 0;
+    }
+}
+
+.dots {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    .dot {
+        height: 5px;
+        width: 200px;
+        margin: 0 2px;
+        background-color: #747c75;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #000000;
+    }
+}
+}
+// @media screen and (max-width: 500px) {
+//     .me{
+//         background-color: red;
+//     }
+// }
