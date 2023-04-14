@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Rubik", sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -82,6 +83,7 @@ body {
 
 /* Slideshow container */
 .slider_sect {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   height: 83.5vh;
@@ -169,6 +171,81 @@ body {
 .slider_sect .dots .active,
 .slider_sect .dots .dot:hover {
   background-color: #000000;
+}
+
+/* Top buy clothes */
+.mostBuyed_clothes .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8vh;
+}
+.mostBuyed_clothes .top p {
+  font-size: 2rem;
+}
+.mostBuyed_clothes .top p,
+.mostBuyed_clothes .top a {
+  text-align: center;
+  margin: 2rem 5rem 0 5rem;
+  color: black;
+}
+.mostBuyed_clothes .top a {
+  text-decoration: none;
+  height: fit-content;
+  padding: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  box-shadow: 6px 6px 10px #8db0ce;
+}
+.mostBuyed_clothes .top a:hover {
+  border: 1px solid black;
+}
+.mostBuyed_clothes .clothes {
+  display: flex;
+  justify-content: space-around;
+}
+.mostBuyed_clothes .clothes img {
+  -webkit-user-select: none;
+  user-select: none;
+  height: 450px;
+  width: 450px;
+  box-shadow: 6px 6px 10px #8db0ce;
+  margin-bottom: 1rem;
+}
+.mostBuyed_clothes .clothes #white_hoodie:hover {
+  content: url(/assets/white_hoodieHYTE2.jpeg);
+  height: 450px;
+  width: 450px;
+  box-shadow: 6px 6px 10px #8db0ce;
+  margin-bottom: 1rem;
+}
+.mostBuyed_clothes .clothes #black_hoodie:hover {
+  content: url(/assets/black_hoodieHYTE2.jpeg);
+  height: 450px;
+  width: 450px;
+  box-shadow: 6px 6px 10px #8db0ce;
+  margin-bottom: 1rem;
+}
+.mostBuyed_clothes .clothes #overdose_HYTE:hover {
+  content: url(/assets/black_tshirtHYTE2.jpeg);
+  height: 450px;
+  width: 450px;
+  box-shadow: 6px 6px 10px #8db0ce;
+  margin-bottom: 1rem;
+}
+.mostBuyed_clothes .clothes #WORTHLESS_HYTE:hover {
+  content: url(/assets/black-violet_tshirtHYTE2.jpeg);
+  height: 450px;
+  width: 450px;
+  box-shadow: 6px 6px 10px #8db0ce;
+  margin-bottom: 1rem;
+}
+.mostBuyed_clothes .clothes p {
+  color: black;
+  text-align: center;
+}
+.mostBuyed_clothes .clothes p s {
+  color: grey;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

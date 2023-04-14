@@ -5,6 +5,16 @@
   "hints": {
     "axe/name-role-value": "off",
     "detect-css-reflows/layout": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-size-adjust",
+          "scroll-behavior",
+          "height: fit-content"
+        ]
+      }
+    ]
   }
 }
