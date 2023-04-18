@@ -12,9 +12,12 @@
         "ignore": [
           "text-size-adjust",
           "scroll-behavior",
-          "height: fit-content"
+          "height: fit-content",
+          "max-width: fit-content"
         ]
       }
-    ]
+    ],
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
   }
 }
