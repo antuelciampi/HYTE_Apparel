@@ -8,21 +8,6 @@
   user-select: none;
 }
 
-.clickers {
-  z-index: 1;
-  padding: 5px;
-  display: flex;
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  flex-direction: column;
-}
-.clickers img {
-  width: 30px;
-  height: 30px;
-  color: black;
-}
-
 .shipping {
   height: 50px;
   display: flex;
@@ -48,13 +33,13 @@
 .header .head-categories ul {
   display: flex;
   list-style: none;
-  gap: 30px;
-  font-weight: 600;
+  gap: 1vw;
+  font-weight: 300;
 }
 .header .head-categories ul a {
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-bottom-color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding-bottom: 5px;
 }
 .header .head-categories ul a:hover {
@@ -74,7 +59,7 @@
   text-decoration: none;
 }
 .header .head-icons i {
-  margin: 0px 20px;
+  margin: 0vh 0.8vw;
   font-size: 1.5rem;
 }
 
@@ -358,7 +343,92 @@
 }
 
 footer {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 10vh 0vw 1vh 0vw;
   background-color: black;
+}
+footer .footer_gral {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer_gral .more_info {
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_gral .more_info div:last-of-type {
+  margin-left: 0.5vw;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer_gral .more_info div:last-of-type a {
+  max-width: fit-content;
+  margin-bottom: 1.5vh;
+  padding-left: 0.5vw;
+  border-left: 1px solid white;
+  text-decoration: none;
+}
+footer .footer_gral .more_info div:last-of-type a:last-of-type {
+  margin: 0;
+}
+footer .footer_gral .HYTE_club {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text {
+  margin-left: 0.5vw;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text p {
+  border-left: 1px solid white;
+  padding-left: 0.5vw;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text .HYTE_input {
+  margin: 1.5vh 0vw 5vh 0vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text .HYTE_input input {
+  width: 70%;
+  background-color: transparent;
+  font-size: 1.2rem;
+  border: none;
+  padding: 1vh;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text .HYTE_input input::placeholder {
+  color: white;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text .HYTE_input input:focus {
+  outline: none;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text .HYTE_input button {
+  margin-right: 1vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+footer .footer_gral .HYTE_club .HYTE_club_text .HYTE_input button i:hover {
+  color: #8db0ce;
+}
+footer .footer_gral .clickers a {
+  text-decoration: none;
+  margin-right: 0.5vw;
+}
+footer .footer_gral .clickers a i {
+  color: white;
+}
+footer #copyright {
+  margin-top: 5vh;
+  font-weight: 100;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

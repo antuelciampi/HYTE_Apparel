@@ -14,30 +14,6 @@
     user-select: none;
 }
 
-//using this to see beyond my current code. will delete it later hehe
-body {
-    height: 300vh;
-}
-
-// REDES-UPBUTTON //
-
-.clickers {
-    z-index: 1;
-    padding: 5px;
-    display: flex;
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    flex-direction: column;
-
-    img {
-        width: 30px;
-        height: 30px;
-        color: $NEGRO;
-    }
-}
-
-
 // HEADER //
 
 .shipping {
@@ -67,13 +43,13 @@ body {
         ul {
             display: flex;
             list-style: none;
-            gap: 30px;
-            font-weight: 600;
+            gap: 1vw;
+            font-weight: 300;
 
             a {
                 text-decoration: none;
                 border-bottom: 1px solid transparent;
-                transition: border-bottom-color 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
                 padding-bottom: 5px;
 
                 &:hover {
@@ -85,7 +61,6 @@ body {
 
     .head-logo {
         margin-left: 50px;
-        //
 
         img {
             width: 100px;
@@ -101,7 +76,7 @@ body {
         }
 
         i {
-            margin: 0px 20px;
+            margin: 0vh 0.8vw;
             font-size: 1.5rem;
         }
     }
@@ -445,5 +420,106 @@ body {
 // FOOTER //
 
 footer {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 10vh 0vw 1vh 0vw;
     background-color: $NEGRO;
+
+    .footer_gral {
+        display: flex;
+        justify-content: space-around;
+
+        .more_info {
+            gap: 2vh;
+            display: flex;
+            flex-direction: column;
+
+            div:last-of-type {
+                margin-left: 0.5vw;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a {
+                    max-width: fit-content;
+                    margin-bottom: 1.5vh;
+                    padding-left: 0.5vw;
+                    border-left: 1px solid $BLANCO;
+                    text-decoration: none;
+
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .HYTE_club {
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            .HYTE_club_text {
+                margin-left: 0.5vw;
+                p {
+                    border-left: 1px solid $BLANCO;
+                    padding-left: 0.5vw;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+
+                .HYTE_input {
+                    margin: 1.5vh 0vw 5vh 0vw;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $BLANCO;
+                    input {
+                        width: 70%;
+                        background-color: transparent;
+                        font-size: 1.2rem;
+                        border: none;
+                        padding: 1vh;
+
+                        &::placeholder {
+                            color: $BLANCO;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    button {
+                        margin-right: 1vw;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+
+                        i {
+                            &:hover {
+                                color: $azul_hyte;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .clickers{
+            a{
+                text-decoration: none;
+                margin-right: 0.5vw;
+                i{
+                    color: $BLANCO;
+                }
+            }
+        }
+    }
+
+    #copyright{
+        margin-top: 5vh;
+        font-weight: 100;
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
